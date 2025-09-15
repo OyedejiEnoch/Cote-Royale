@@ -1,0 +1,25 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"eyebrow": {
+				"__TYPE__": "FieldContent",
+				"value": "race",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Esse in pariatur dolore aliqua nulla laborum fugiat exercitation voluptate duis irure mollit. Lorem dolor laborum tempor ex id in consectetur officia voluptate ipsum sint cupidatat aute dolore nostrud."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
