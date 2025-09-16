@@ -54,7 +54,12 @@ export const RevealText = ({children, className, id, field, staggerAmount=.1, al
             {words.map((word, index)=>(
                 //Renders each word in a span
                 <span key={`${word}-${index}-${id}`} className=" mb-0 inline-block overflow-hidden pb-4">
-                    <span className="reveal-text-word mt-0 inline-block translate-y-[120%] will-change-transform">{word}</span> 
+                    <span className="reveal-text-word mt-0 inline-block translate-y-[120%] will-change-transform">{word} 
+                      {index < words.length -1 ? 
+                      (<span className="inline">
+                        &nbsp; 
+                      </span> ) : null}
+                      </span> 
                 </span>
             ))}
         </Component>
