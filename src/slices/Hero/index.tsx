@@ -6,6 +6,7 @@ import clsx from "clsx";
 import { Bounded } from "@/components/Bounded";
 import { FadeIn } from "@/components/FadeIn";
 import { RevealText } from "@/components/RevealText";
+import ButtonLink from "@/components/ButtonLink";
 
 
 /**
@@ -42,13 +43,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
 
         <FadeIn vars={{duration:1, delay:1.7}} className="mt-8 translate-y-5">
           {slice.primary.button.map((link) => (
-            <PrismicNextLink
-            key={link.key}
-            field={link}
-            className={clsx(`inline-flex items-center justify-center px-12 py-4 text-center font-extrabold tracking-wider 
-              uppercase transition-colors duration-300`, link.variant  ==='Secondary' ? 'border-white text-white hover:bg-white/20' : 'bg-white text-black hover:bg-white/80',
-              'w-fit')}
-              />
+            <ButtonLink field={link} className="w-fit" key={link.key} variant="Secondary" />
             ))}
         </FadeIn>
       </div>

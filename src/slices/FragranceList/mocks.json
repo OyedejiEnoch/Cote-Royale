@@ -1,0 +1,57 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"eyebrow": {
+				"__TYPE__": "FieldContent",
+				"value": "nodded",
+				"type": "Text"
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Funny"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Non est aute elit adipisicing adipisicing cupidatat sunt id anim magna. Lorem voluptate quis excepteur proident voluptate magna aute. Eiusmod eiusmod officia dolore enim consectetur consequat do culpa eu ex dolor velit dolore."
+						}
+					}
+				]
+			},
+			"fragrances": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"fragrance",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "06513036-88f8-470f-9bc3-45a5e41471fb",
+									"value": {
+										"__TYPE__": "DocumentLink",
+										"id": "mock_document_id"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
