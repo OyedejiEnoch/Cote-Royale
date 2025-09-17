@@ -5,8 +5,8 @@
 		"primary": {
 			"eyebrow": {
 				"__TYPE__": "FieldContent",
-				"value": "word",
-				"type": "Text"
+				"type": "Text",
+				"value": "Fragrance Quiz"
 			},
 			"heading": {
 				"__TYPE__": "StructuredTextContent",
@@ -14,8 +14,10 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Radio"
-						}
+							"text": "The Cote Royale Fragrance Finder",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -25,8 +27,10 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Adipisicing eu labore veniam tempor officia. Laboris occaecat do proident aute officia adipisicing nostrud qui."
-						}
+							"text": "Find your perfect scent with our personalized quiz.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -40,8 +44,8 @@
 						"value": {
 							"__TYPE__": "ExternalLink",
 							"url": "https://prismic.io",
-							"text": "alive",
-							"variant": "Primary"
+							"text": "See the Quiz",
+							"variant": "Secondary"
 						}
 					}
 				]

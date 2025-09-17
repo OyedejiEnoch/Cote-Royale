@@ -8,4 +8,5 @@ export const components = {
   hero: dynamic(() => import("./Hero")),
   product_feature: dynamic(() => import("./ProductFeature")),
   scrolltext: dynamic(() => import("./Scrolltext")),
+  video: dynamic(() => import("./Video")),
 };

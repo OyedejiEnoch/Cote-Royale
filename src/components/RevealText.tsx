@@ -5,8 +5,9 @@ import clsx from "clsx";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(useGSAP)
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 type RevealTextProps = {
     field:RichTextField,
     id:string,
@@ -16,9 +17,11 @@ type RevealTextProps = {
     as?:React.ElementType
     children?: React.ReactNode;
     align?: 'start' | 'center' | 'end';
+    triggerStart?:string
+    triggerEnd?:string
 }
 export const RevealText = ({children, className, id, field, staggerAmount=.1, align='start', as:Component='div', 
-    duration=.8}:RevealTextProps) => {
+    duration=.8, triggerStart='top 80%', triggerEnd='bottom 20%'}:RevealTextProps) => {
 
     const componentRef = useRef<HTMLDivElement>(null);
 
@@ -34,6 +37,11 @@ export const RevealText = ({children, className, id, field, staggerAmount=.1, al
           stagger: staggerAmount,
           duration,
           ease: "power3.out",
+          scrollTrigger:{
+            trigger: componentRef.current,
+            start: triggerStart,
+            end: triggerEnd,
+          }
         });
       });
 
