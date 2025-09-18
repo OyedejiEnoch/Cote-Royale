@@ -1,8 +1,9 @@
 import { createClient } from '@/prismicio'
 import { formatPrice } from '@/utils/formatters'
-import { PrismicNextImage, PrismicNextLink } from '@prismicio/next'
+import { PrismicNextImage} from '@prismicio/next'
 import { PrismicText } from '@prismicio/react'
 import React from 'react'
+import TransitionLink from '@/components/TransitionLink'
 
 type OtherFragrancesProps = {
     currentFragranceUid:string
@@ -23,7 +24,8 @@ const OtherFragrances = async({currentFragranceUid}:OtherFragrancesProps) => {
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {otherFragrances.map((fragrance)=>(
           <li key={fragrance.uid}>
-            <PrismicNextLink document={fragrance} className='group'>
+            <TransitionLink
+             document={fragrance} className='group'>
                 <div className='relative aspect-square w-full transition-transform duration-500 group-hover:scale-105'>
                     <PrismicNextImage  field={fragrance.data.bottle_image} width={600} height={600} className='h-auto w-full'/>
                 </div>
@@ -38,7 +40,7 @@ const OtherFragrances = async({currentFragranceUid}:OtherFragrancesProps) => {
                     </p>
                 </div>
 
-            </PrismicNextLink>
+            </TransitionLink>
           </li>
         ))}
       </ul>

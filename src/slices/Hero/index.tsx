@@ -1,8 +1,7 @@
 import { FC} from "react";
 import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
-import clsx from "clsx";
+import { PrismicNextImage} from "@prismicio/next";
 import { Bounded } from "@/components/Bounded";
 import { FadeIn } from "@/components/FadeIn";
 import { RevealText } from "@/components/RevealText";
