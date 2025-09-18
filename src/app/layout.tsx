@@ -5,8 +5,11 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { isFilled } from "@prismicio/client";
-import { createClient } from "@/prismicio";
+import { createClient, repositoryName } from "@/prismicio";
 import { ViewTransitions } from 'next-view-transitions'
+import { PrismicPreview } from "@prismicio/next";
+
+
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -52,6 +55,7 @@ export default async function RootLayout({
         </main>
         <Footer />
       </body>
+      <PrismicPreview repositoryName={repositoryName}  />
     </html>
     </ViewTransitions>
   );
