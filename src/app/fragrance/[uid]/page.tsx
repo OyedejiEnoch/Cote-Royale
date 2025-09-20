@@ -40,7 +40,7 @@ export default async function Page({ params }: { params: Promise<Params> }) {
                     </p>
                     <PrismicRichText field={page.data.description} />
 
-                    <FragranceAttributes mood={page.data.mood} scentProfile={page.data.scent_profile}/>
+                    <FragranceAttributes mood={(page.data.mood as string)} scentProfile={page.data.scent_profile}/>
 
                     <p className="mt-10 text-3xl font-light">
                         {formatPrice(page.data.price)}

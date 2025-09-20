@@ -38,7 +38,7 @@ const FragranceDisplay = async ({id}:FragranceDisplayProps) => {
             <PrismicRichText field={fragrance.data.description} />
         </div>
 
-        <FragranceAttributes scentProfile={fragrance.data.scent_profile} mood={fragrance.data.mood} className='mb-10' />
+        <FragranceAttributes scentProfile={fragrance.data.scent_profile} mood={(fragrance.data.mood as string)} className='mb-10' />
 
         <div className="flex flex-wrap gap-4">
             <ButtonLink document={fragrance} variant='Secondary'>Discover</ButtonLink>

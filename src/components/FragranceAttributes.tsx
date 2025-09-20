@@ -16,7 +16,7 @@ const SCENT_PROFILES: Record<Content.FragranceDocumentData['scent_profile'], Att
     Fresh:{label:'Fresh & Aquatic', Icon: LuDroplet},
 }
 
-const MOODS: Record<Content.FragranceDocumentData['mood'], AttributeData> ={
+const MOODS: Record<string, AttributeData> ={
     bold:{label:'Bold & Seductive', Icon: LuCrown},
     grounded:{label:'Grounded & Sophisticated', Icon: LuGem},
     refreshing:{label:'Refreshing & Invigorating', Icon: LuZap},    
@@ -24,7 +24,7 @@ const MOODS: Record<Content.FragranceDocumentData['mood'], AttributeData> ={
 
 type FragranceAttributesProps = {
     scentProfile: Content.FragranceDocumentData['scent_profile'];
-    mood: Content.FragranceDocumentData['mood'];
+    mood: string;
     className?: string;
 }
 
